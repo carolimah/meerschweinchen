@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@import "./variables.css";
+@theme {
+  --color-green: #45752f;
+  --color-light-green: #8e9a8c;
+  --color-beige: #f7f8f8;
+  --color-dark-brown: #5f4337;
+  --color-light-brown: #c8975c;
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+body {
+  margin: 0;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+p{
+    font-size: 20px;
+}
+li{
+    cursor: pointer;
+}
+@keyframes fadeImg {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.animate-fade-img {
+    animation: fadeImg 12s ease-in-out infinite;
+}
+@layer utilities {
+    .delay-0s {
+        animation-delay: 0s;
+    }
+
+    .delay-3s {
+        animation-delay: 30s;
+    }
+
+    .delay-6s {
+        animation-delay: 6s;
+    }
+
+    .delay-9s {
+        animation-delay: 9s;
+    } }
